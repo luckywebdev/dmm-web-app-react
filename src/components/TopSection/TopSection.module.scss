@@ -1,0 +1,346 @@
+
+.TopBar {
+  padding-top: 80px;
+  /*background: linear-gradient(360deg, #327ccb, #4f94de 5%, #8bbbef 15%, #bdddff 25%, #deeeff 40%);*/
+}
+
+.totalTokensPurchasedLoader {
+  padding-right: 4px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  /*height: 250px;*/
+  height: calc(100vh - 80px);
+}
+
+.title {
+  text-align: center;
+}
+
+.leftStats {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 30px;
+}
+
+.rightStat {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+.totalStat {
+  width: fit-content;
+  text-align: right;
+  float: right;
+  padding-right: 10px;
+  border-right: 5px solid #327ccb;
+}
+
+.bigNum {
+  font-size: 5em;
+  line-height: 0.9em;
+}
+
+.statSubtitle {
+  margin-top: 8px;
+  font-weight: 100;
+  font-size: 1.2em;
+}
+
+.aprWrapper {
+  font-weight: 100;
+  font-size: 2em;
+  line-height: 1.65em;
+}
+
+.usdToDmm {
+  text-align: left;
+}
+
+@-webkit-keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.interestRate {
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.section {
+  opacity: 0;
+  width: fit-content;
+  text-align: center;
+  position: absolute;
+  //-webkit-animation: fadeAnimation 0s infinite; /* Safari 4+ */
+  //-moz-animation: fadeAnimation 0s infinite; /* Fx 4+ */
+  //-o-animation: fadeAnimation 0s infinite; /* Opera 12+ */
+  //animation: fadeAnimation 0s infinite; /* IE 10+, Fx 29+ */
+}
+
+.arrow {
+  margin-bottom: -6px;
+}
+
+.light {
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .totalStat {
+    border-right-width: 5px;
+  }
+
+  .bigNum {
+    font-size: 4em;
+  }
+
+  .statSubtitle {
+    font-size: 1.3em;
+  }
+
+  .rightStat {
+    padding-top: 25px;
+  }
+
+  .aprWrapper {
+    font-size: 2.3em;
+  }
+
+  .interestRate {
+    font-size: 0.9em;
+    line-height: 1.4em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .totalStat {
+    border-right-width: 5px;
+  }
+
+  .bigNum {
+    font-size: 3.6em;
+  }
+
+  .statSubtitle {
+    font-size: 1.1em;
+  }
+
+  .rightStat {
+    padding-top: 25px;
+  }
+
+  .aprWrapper {
+    font-size: 2.1em;
+    margin-bottom: -3px;
+  }
+
+  .interestRate {
+    font-size: 0.9em;
+    line-height: 1.4em;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    height: 880px;
+  }
+}
+
+@media (max-width: 850px) {
+  .totalStat {
+    border-right-width: 4px;
+  }
+
+  .bigNum {
+    font-size: 3.3em;
+  }
+
+  .statSubtitle {
+    font-size: 1em;
+  }
+
+  .rightStat {
+    padding-top: 23px;
+  }
+
+  .aprWrapper {
+    font-size: 1.9em;
+    margin-bottom: -5px;
+  }
+
+  .interestRate {
+    font-size: 0.8em;
+    line-height: 1.4em;
+  }
+}
+
+@media (max-width: 700px) {
+  .TopBar {
+    padding-bottom: 120px;
+  }
+
+  .content {
+    height: 820px;
+  }
+
+  .totalStat {
+    border-right-width: 4px;
+  }
+
+  .bigNum {
+    font-size: 3.0em;
+  }
+
+  .statSubtitle {
+    font-size: 0.8em;
+  }
+
+  .rightStat {
+    padding-top: 25px;
+  }
+
+  .aprWrapper {
+    font-size: 1.6em;
+  }
+
+  .interestRate {
+    font-size: 0.8em;
+    line-height: 1.3em;
+  }
+}
+
+@media (max-width: 550px) {
+  .TopBar {
+    padding-bottom: 120px;
+  }
+
+  .section {
+    right: 0;
+    width: 100%;
+  }
+
+  .content {
+    height: 1070px;
+  }
+
+  .leftStats {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .totalStat {
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .bigNum {
+    font-size: 14vw;
+    font-weight: 400;
+  }
+
+  .statSubtitle {
+    font-size: 0.9em;
+    font-weight: 100;
+    margin-top: 5px;
+  }
+
+  .rightStat {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+
+  .aprWrapper {
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 1.65em;
+    margin-bottom: 10px;
+  }
+
+  .usdToDmm {
+    text-align: center;
+  }
+}
